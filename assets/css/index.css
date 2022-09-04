@@ -64,10 +64,13 @@ body {
   border-bottom: 1px solid transparent;
 }
 /* GENERAL REUSABLE COMPONENTS */
-.grid {
+main .grid {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+main .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 .container {
   max-width: 120rem;
