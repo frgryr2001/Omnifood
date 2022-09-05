@@ -35,6 +35,7 @@ LINE HEIGHT SYSTEM (px) : DEFAULT 1.0
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -68,12 +69,12 @@ body {
   border-bottom: 1px solid transparent;
 }
 /* GENERAL REUSABLE COMPONENTS */
-main .grid {
+.grid {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
-main .grid:not(:last-child) {
+.grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
 .container {
@@ -89,6 +90,9 @@ main .grid:not(:last-child) {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid--center-v {
   align-items: center;
